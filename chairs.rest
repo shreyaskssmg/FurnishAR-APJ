@@ -1,0 +1,40 @@
+
+###
+GET http://localhost:3000/chairs/
+
+
+###
+GET http://localhost:3000/chairs/DOAN 2c
+
+
+###
+POST http://localhost:3000/chairs
+Content-Type: application/json
+
+{
+    "dimension" : {
+        "width" : "2c cm",
+        "depth" : "2c cm",
+        "height" : "2c cm"
+    },
+    "title" : "DOAN 2c",
+    "description" : "description 2c",
+    "image_url" : "www.google.com/example2c.jpg",
+    "model_url" : "www.google.com/model.glb",
+    "category" : "HIGH Armchair 2c",
+    "price" : "2c,000",
+    "currency": "₹2c",
+    "rating" : 4.2
+}
+
+###
+DELETE http://localhost:3000/chairs/DOAN 2cu
+
+
+###
+PATCH  http://localhost:3000/chairs/DOAN 2c
+Content-Type: application/json
+
+{
+    "title" : "DOAN 2cu"
+}

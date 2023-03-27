@@ -1,0 +1,40 @@
+
+###
+GET http://localhost:3000/furnis/
+
+
+###
+GET http://localhost:3000/furnis/DOAN 3f
+
+
+###
+POST http://localhost:3000/furnis
+Content-Type: application/json
+
+{
+    "dimension" : {
+        "width" : "2f cm",
+        "depth" : "2f cm",
+        "height" : "2f cm"
+    },
+    "title" : "DOAN 2f",
+    "description" : "description 2f",
+    "image_url" : "www.google.com/example2f.jpg",
+    "category" : "HIGH Armchair 2f",
+    "price" : "2f,000",
+    "currency": "₹2f",
+    "rating" : 4.2
+}
+
+###
+DELETE http://localhost:3000/furnis/DOAN 3f
+
+
+###
+
+PATCH  http://localhost:3000/furnis/DOAN 2f
+Content-Type: application/json
+
+{
+    "title" : "DOAN 3f"
+}

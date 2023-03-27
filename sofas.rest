@@ -1,0 +1,40 @@
+
+###
+GET http://localhost:3000/sofas/
+
+
+###
+GET http://localhost:3000/sofas/DOAN 2sc
+
+
+###
+POST http://localhost:3000/sofas
+Content-Type: application/json
+
+{
+    "dimension" : {
+        "width" : "2s cm",
+        "depth" : "2s cm",
+        "height" : "2s cm"
+    },
+    "title" : "DOAN 2sc",
+    "description" : "description 2s",
+    "image_url" : "www.google.com/example2s.jpg",
+    "model_url" : "www.google.com/model.glb",
+    "category" : "HIGH Armchair 2s",
+    "price" : "2s,000",
+    "currency": "₹2s",
+    "rating" : 4.2
+}
+
+###
+DELETE http://localhost:3000/sofas/DOAN 2si
+
+###
+
+PATCH  http://localhost:3000/sofas/DOAN 2sc
+Content-Type: application/json
+
+{
+    "title" : "DOAN 2si"
+}
